@@ -37,7 +37,7 @@ const MobileNav = () => {
                 <Link
                   onClick={() => closeOnCurrent("/sign-up")}
                   className="flex items-center w-full font-semibold text-green-600"
-                  href="/sign-up"
+                  href="/"
                 >
                   Get started
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -48,9 +48,9 @@ const MobileNav = () => {
                 <Link
                   onClick={() => closeOnCurrent("/sign-in")}
                   className="flex items-center w-full font-semibold"
-                  href="/sign-in"
+                  href="/"
                 >
-                  Sign in
+                  Use Cases
                 </Link>
               </li>
               <li className="my-3 h-px w-full bg-gray-300" />
@@ -60,9 +60,20 @@ const MobileNav = () => {
                   className="flex items-center w-full font-semibold"
                   href="/pricing"
                 >
-                  Pricing
+                  Security
                 </Link>
               </li>
+              <li className="my-3 h-px w-full bg-gray-300" />
+              <li>
+                <Link
+                  onClick={() => closeOnCurrent("/pricing")}
+                  className="flex items-center w-full font-semibold"
+                  href="/pricing"
+                >
+                  Careers
+                </Link>
+              </li>
+              
             </>
           </ul>
         </div>

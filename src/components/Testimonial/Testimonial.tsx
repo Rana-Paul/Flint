@@ -3,11 +3,11 @@
 
 import Image, { StaticImageData } from "next/image";
 
-import imageDaniel from "../../../public/img/Audrey.png";
-import imageJonathan from "../../../public/img/Jake.png";
-import imageJeanette from "../../../public/img/Keri.png";
-import imagePatrick from "../../../public/img/William.png";
-import imageKira from "../../../public/img/Zach.png";
+import Audrey from "../../../public/img/Audrey.png";
+import Jake from "../../../public/img/Jake.png";
+import Keri from "../../../public/img/Keri.png";
+import William from "../../../public/img/William.png";
+import Zach from "../../../public/img/Zach.png";
 import clsx from "clsx";
 
 // colors
@@ -38,56 +38,56 @@ const data: DataType[] = [
     className: "md:col-span-2",
     bgColor: color_ModerateViolet,
     textColor: color_LightGray,
-    avatarImg: imageDaniel,
+    avatarImg: Audrey,
     name: "Daniel Clifford",
     heading:
-      "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.",
+    "Dynamic Language Learning: Tailoring Conversations with Flint, the AI Assistant — Enhancing French Proficiency Through Personalized Interactions and Supportive Guidance in Varied Skill Levels.",
     description:
-      "I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ",
+      "In my teaching approach, I engage students in both written and spoken French conversations with the AI. This dynamic interaction allows advanced students to delve deeper into the language, while simultaneously offering additional support to those who may be facing challenges, aligning with the specific learning objectives I set. Flint, our AI assistant, plays a pivotal role by tailoring its responses to cater to each student's needs. It feels akin to having a dedicated teaching assistant, amplifying the personalized learning experience in my classroom."
   },
   {
     // 2
-    avatarImg: imageJonathan,
+    avatarImg: Jake,
     bgColor: color_VeryDarkGrayishBlue,
     textColor: color_LightGray,
     name: "Jonathan Walters",
-    heading: "The team was very supportive and kept me motivated",
+    heading: "High Engagement: Adaptive Coding with Flint for Personalized Learning.",
     description:
-      " I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself.  ",
+    "The engagement with students is exceptionally high, in large part due to the pacing. I've been using Flint for coding assignments, and it automatically scales the difficulty according to each student's skill level."
   },
   {
     // 3
     className: "md:row-span-2",
     bgColor: color_LightGrayishBlue,
     textColor: color_VeryDarkGrayishBlue,
-    avatarImg: imageKira,
+    avatarImg: Zach,
     name: "Kira Whittle",
-    heading: "Such a life-changing experience. Highly recommended!",
+    heading: "Flint: Adaptive Support for Student Success.",
     description:
-      "Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ",
+    "Employing Flint's AI for review sessions has proven immensely popular among students, creating a positive learning environment. The adaptive nature of Flint allows it to provide gentle guidance to students facing difficulties, redirecting them effectively. While I could offer such support personally, the convenience of Flint's assistance becomes evident during late-night study sessions. At 9 pm, when students are fervently preparing for quizzes, Flint steps in seamlessly to offer timely help. This not only ensures that students receive the assistance they need, even during off-hours, but it also contributes to a smoother review process. The students' enthusiasm for Flint reflects its effectiveness as a supportive tool, enhancing the overall educational experience in a flexible and student-centric manner."
   },
   {
     // 4
     bgColor: color_LightGrayishBlue,
     textColor: color_VeryDarkGrayishBlue,
-    avatarImg: imageJeanette,
+    avatarImg: Keri,
     name: "Jeanette Harmon",
-    heading: "An overall wonderful and rewarding experience",
+    heading: "AI Sparks Student Enthusiasm in Writing.",
     description:
-      "Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ",
+    "Students enthusiastically shared their narrative writing with the AI, displaying unprecedented engagement. Despite a planned 30-minute limit, their fervent request led to an extended session for continuous revision."
   },
   {
     // 5
     className: "md:col-span-2",
-    avatarImg: imagePatrick,
+    avatarImg: William,
     bgColor: color_VeryDarkBlackishBlue,
     textColor: color_LightGray,
     name: "Patrick Abrams",
     heading:
-      "Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.",
+    "Flint's Impact: Fostering Enthusiasm Beyond Classrooms. Parents Praise 'Cool Assignments' as Students Share Excitement About Interactive Learning Experiences.",
     description:
-      "The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ",
-  },
+    "Flint not only provides insights into students' thoughts through their interactions but also generates genuine enthusiasm. Parents have reached out, expressing how their children excitedly discussed the cool assignment at home. The positive impact of Flint extends beyond the classroom, fostering a connection between students, learning, and technology that resonates with both educators and parents alike.",
+  }
 ];
 
 export default function Testimonial() {

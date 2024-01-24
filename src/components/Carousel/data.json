@@ -1,0 +1,39 @@
+{
+    "data":[
+        {
+            "img":"/img/step1.png",
+            "title":"Start with a learning objective.",
+            "steps":[
+                {"step": "Specify context so the AI will share only what you want."},
+                {"step": "Upload additional reference material."},
+                {"step": "Pick from creative AI-generated assignment types."}
+            ]
+        },
+        {
+            "img":"/img/step2.png",
+            "title":"Design an AI for your students to talk to.",
+            "steps":[
+                {"step": "Create rules for the AI to follow. "},
+                {"step": "Choose from 50+ languages for the AI to communicate in."},
+                {"step": "Set the reading level and grading criteria."}
+            ]
+        },
+        {
+            "img":"/img/step3.png",
+            "title":"Give students personalized help.",
+            "steps":[
+                {"step": "The AI will adjust to each student’s level and help when they get stuck, without giving away the answer."},
+                {"step": "Watch student conversations in real time."}
+            ]
+        },
+        {
+            "img":"/img/step4.png",
+            "title":"Get AI-powered feedback.",
+            "steps":[
+                {"step": "Auto-generated feedback for each student."},
+                {"step": "See exactly where students struggled."},
+                {"step": "Get ideas for follow-up learning objectives."}
+            ]
+        }
+    ]
+}

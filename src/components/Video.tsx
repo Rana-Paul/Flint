@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ReactPlayer from "react-player";
-import MaxWithWrapper from "./MaxWidthWrapper";
 
 const Video = () => {
   return (

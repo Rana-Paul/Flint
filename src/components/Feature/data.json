@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "img": "/img/shild.png",
+            "title": "Student data protection",
+            "desc": "Unlike ChatGPT, Flint does not use student chat data to train AI models."
+        },
+        {
+            "img": "/img/key.png",
+            "title": "Equitable access",
+            "desc": "Flint is accessible to students under the age of 13 with no phone number required."
+        },
+        {
+            "img": "/img/heart.png",
+            "title": "A+ customer support",
+            "desc": "Flint provides 1-1 onboarding calls for teachers, virtual trainings, and in-person PD."
+        }
+    ]
+}

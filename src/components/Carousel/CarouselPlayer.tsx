@@ -13,7 +13,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 function CarouselPlayer() {
   return (
-    <div className="mx-auto max-w-5xl px-6 lg:px-8 mt-1">
+    <div suppressHydrationWarning={true} className="mx-auto max-w-5xl px-6 lg:px-8 mt-1">
       <Carousel
       plugins={[Autoplay({delay:5000})]}
         opts={{

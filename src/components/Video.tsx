@@ -1,12 +1,19 @@
 "use client";
-import React from "react";
+import { Loader2 } from "lucide-react";
+import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
 const Video = () => {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, [isClient]);
+  
   return (
     <div suppressHydrationWarning={true} className="aspect-videon relative">
 
-      <ReactPlayer
+      {isClient ? (
+        <ReactPlayer
         width="100%"
         height="auto"
         className="w-full h-full "
@@ -18,6 +25,7 @@ const Video = () => {
         pip={true}
         style={{borderRadius: "100px",}}
       />
+      ): <Loader2 className="h-4 w-4 animate-spin" />}
     </div>
     
   );

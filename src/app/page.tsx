@@ -1,22 +1,18 @@
-"use client";
 import CarouselPlayer from "@/components/Carousel/CarouselPlayer";
 import Feature from "@/components/Feature/Feature";
+import Footer from "@/components/Footer/Footer";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Scroller from "@/components/Scroller/Scroller";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Video from "@/components/Video";
 import { buttonVariants } from "@/components/ui/button";
 
-import { ArrowRight, Loader2 } from "lucide-react";
-import Image, { StaticImageData } from "next/image";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [isClient, setIsClient] = useState(false);
-  useEffect(() => {
-    setIsClient(true);
-  }, [isClient]);
+
 
   return (
     <>
@@ -70,11 +66,8 @@ export default function Home() {
               <div className="mx-auto max-w-6xl px-6 lg:px-8">
                 <div className="mt-16 flow-root sm:mt-24">
                   <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                    {isClient ? (
                       <Video />
-                    ) : (
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                    )}
+                      
                   </div>
                 </div>
               </div>
@@ -176,6 +169,8 @@ export default function Home() {
 
           <Feature />
         </div>
+
+          <Footer />
       </section>
     </>
   );

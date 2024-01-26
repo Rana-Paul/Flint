@@ -1,0 +1,25 @@
+{
+    "Product": [
+        {"title": "Stocks"},
+        {"title": "Futures & Options"},
+        {"title": "Mutual Funds"},
+        {"title": "Fixed deposits"}
+
+    ],
+    "Company": [
+        {"title": "About"},
+        {"title": "Products"},
+        {"title": "Pricing"},
+        {"title": "Careers"},
+        {"title": "Press & Media"}
+
+    ],
+    "Support": [
+        {"title": "Contact"},
+        {"title": "Support Portals"},
+        {"title": "List Of Charges"},
+        {"title": "Downloads & Resources"},
+        {"title": "Videos"}
+
+    ]
+}

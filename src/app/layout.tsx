@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import Chat from "@/components/Chatbot/Chat";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         'min-h-screen font-sans antialiased grainy',
         inter.className)}>
         <Navbar />
+        <Chat />
         {children}</body>
     </html>
   );

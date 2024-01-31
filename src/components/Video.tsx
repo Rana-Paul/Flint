@@ -9,7 +9,7 @@ const Video = () => {
     if (typeof window !== "undefined") {
     setIsClient(true)
     }
-  }, [isClient]);
+  }, []);
   
   return (
     <div suppressHydrationWarning={true} className="aspect-videon relative">

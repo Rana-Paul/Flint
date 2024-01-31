@@ -6,7 +6,9 @@ import ReactPlayer from "react-player";
 const Video = () => {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => {
-    setIsClient(true);
+    if (typeof window !== "undefined") {
+    setIsClient(true)
+    }
   }, [isClient]);
   
   return (

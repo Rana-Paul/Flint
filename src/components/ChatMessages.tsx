@@ -8,7 +8,7 @@ interface ChatMessagesProps extends HTMLAttributes<HTMLDivElement> {}
 
 const ChatMessages: FC<ChatMessagesProps> = ({ className, ...props }) => {
   const { messages } = useContext(MessagesContext);
-  const inverseMessages = [...messages].reverse();
+  const inverseMessages = [...messages];
   return (
     <div
       {...props}
@@ -18,26 +18,36 @@ const ChatMessages: FC<ChatMessagesProps> = ({ className, ...props }) => {
       )}
     >
       <div className="flex-1 flex-grow">
-        {inverseMessages.map((message, index) => (
-          <div key={message.id} className="debug-styling">
-            <div
-              className={cn("flex items-end", {
-                "justify-end": message.isUserMessage,
-              })}
-            >
+        {inverseMessages.map((message) => {
+          return (
+            <div key={message.id} className="debug-styling">
               <div
-                className={cn(
-                  "flex flex-col space-y-2 text-sm max-w-xs mx-2 overflow-x-hidden",
-                  {
-                    "bg-blue-600 text-white": message.isUserMessage,
-                    "bg-gray-200 text-gray-900": !message.isUserMessage,
-                  }
-                )}>
-                <MarkDownLite />
+                className={cn("flex items-end", {
+                  "justify-end": message.isUserMessage,
+                })}
+              >
+                <div
+                  className={cn(
+                    "flex flex-col space-y-2 text-sm max-w-xs mx-2 rounded-lg overflow-x-hidden",
+                    {
+                      "bg-blue-600 text-white": message.isUserMessage,
+                      "bg-gray-200 text-gray-900": !message.isUserMessage,
+                    }
+                  )}
+                >
+                  <p
+                    className={cn("px-4 py-2 rounded-lg", {
+                      "bg-blue-600 text-white": message.isUserMessage,
+                      "bg-gray-200 text-gray-900": !message.isUserMessage,
+                    })}
+                  >
+                    {message.text}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

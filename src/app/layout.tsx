@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Chat from "@/components/Chatbot/Chat";
 import Providers from "@/components/Providers";
+import { Toaster } from "react-hot-toast";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +31,7 @@ export default function RootLayout({
         >
           <Navbar />
           <Chat />
+          <Toaster position="bottom-center" />
           {children}
         </body>
       </Providers>

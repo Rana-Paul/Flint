@@ -5,7 +5,7 @@ export const MessagesContext = createContext<{
   messages: Message[];
   isMessageUpdating: boolean;
   addMessage: (message: Message) => void;
-  removeMessage: (id: Message) => void;
+  removeMessage: (id: string) => void;
   updateMessage: (id: string, updateFn: (prevText: string) => string) => void;
   setIsMessageUpdating: (isUpdating: boolean) => void;
 }>({
@@ -32,8 +32,8 @@ export function MessagesProvider({ children }: { children: React.ReactNode }) {
     setMessages((prev) => [...prev, message]);
   };
 
-  const removeMessage = (id: Message) => {
-    setMessages((prev) => prev.filter((message) => message.id !== id.id));
+  const removeMessage = (id: string) => {
+    setMessages((prev) => prev.filter((message) => message.id !== id));
   };
 
   const updateMessage = (

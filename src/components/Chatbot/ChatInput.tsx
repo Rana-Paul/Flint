@@ -33,9 +33,6 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
         },
         body: JSON.stringify({ messages: [message] }),
       });
-      if (!res.ok) {
-        throw new Error("Something went wrong");
-      }
       return res.body;
     },
     onMutate: (message) => {

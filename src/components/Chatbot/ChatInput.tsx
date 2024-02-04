@@ -39,7 +39,7 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
       addMessage(message);
     },
     onSuccess: async (stream) => {
-      console.log("success stream: " + stream);
+      // console.log("success stream: " + stream);
       if (!stream) {
         throw new Error("No stream");
       }
@@ -62,9 +62,8 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
         const { value, done: doneReading } = await reader.read();
         done = doneReading;
         const chunkValue = decoder.decode(value);
-        console.log("chunk value:" + chunkValue);
+        // console.log("chunk value:" + chunkValue);
         updateMessage(id, (prevText) => prevText + chunkValue);
-        // setInput((prev) => prev + chunkValue);
       }
 
       setIsMessageUpdating(false);

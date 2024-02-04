@@ -10,7 +10,6 @@ import {
 import data from "./data.json";
 import Autoplay from "embla-carousel-autoplay";
 
-
 function CarouselPlayer() {
   return (
     <div suppressHydrationWarning={true} className="mx-auto max-w-5xl px-6 lg:px-8 mt-1">

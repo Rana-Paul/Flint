@@ -48,16 +48,16 @@ export async function OpenAiStream(payload: OpenAiStreamPayload) {
           }
           try {
             const json = JSON.parse(data);
-            console.log("json: "+json)
+            // console.log("json: "+json)
             const text = json.choices[0].delta?.content || "";
 
-            console.log("text: " + text);
+            // console.log("text: " + text);
 
             if (counter < 2 && (text.match(/\n/) || []).length) {
               return;
             }
             const queue = encoder.encode(text);
-            console.log("queue: "+queue);
+            // console.log("queue: "+queue);
             controller.enqueue(queue);
             counter++;
           } catch (e) {
@@ -69,7 +69,7 @@ export async function OpenAiStream(payload: OpenAiStreamPayload) {
       const parser = createParser(onParse);
 
       for await (const chunk of res.body as any) {
-        console.log("chunk: "+chunk);
+        // console.log("chunk: "+chunk);
         parser.feed(decoder.decode(chunk));
       }
     },

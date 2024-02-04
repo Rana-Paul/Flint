@@ -69,9 +69,7 @@ const ChatInput: FC<ChatInputProps> = ({ className, ...props }) => {
       setIsMessageUpdating(false);
       setInput("");
 
-      setTimeout(() => {
         textareaRef.current?.focus();
-      }, 10);
     },
     onError: (_, message) => {
       toast.error("Something went wrong!");
